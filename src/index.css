@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --dark-color: #0c1322;
+  --light-color: #1e2d36;
+}
+body {
+  background: linear-gradient(
+    to left,
+    var(--dark-color),
+    var(--light-color),
+    var(--dark-color)
+  );
+}
+
+.dot::before {
+  content: "";
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: white;
+  left: 0;
+  top: 0;
+  transform: translateX(-40px);
+}
